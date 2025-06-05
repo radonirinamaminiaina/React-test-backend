@@ -1,0 +1,32 @@
+{
+    "[html]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": "always"
+        },
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.mouseWheelZoom": true,
+    "editor.formatOnSave": true,
+    "editor.detectIndentation": false,
+    "files.watcherExclude": {
+        "**/.dart_tool": true,
+        "**/.node_modules": true
+    },
+    "eslint.format.enable": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "always"
+    },
+    "typescript.tsdk": "node_modules/typescript/lib"
+}
