@@ -43,8 +43,11 @@ export class AppService {
   ];
 
   addEmployee(employee: Omit<Employee, 'id'>): Employee {
+    const employeeIds = this.employees.map((employee) => employee.id);
+    const maxIds = (Math.max.apply(null, employeeIds) || 0) as number;
+
     const newEmployee = {
-      id: this.employees.length + 1,
+      id: maxIds + 1,
       ...employee,
     };
     this.employees = [...this.employees, newEmployee];
